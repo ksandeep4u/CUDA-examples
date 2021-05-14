@@ -1,12 +1,16 @@
+// Created By: Sandeep Katragadda
+// https://github.com/ksandeep4u/CUDA-examples
+
+#pragma once
 #include "cpuProgram.h"
 
 void cvt_to_gray(Mat bgrImage, Mat gImage, int iw, int ih) {
 
 	for (int y = 0; y < ih; y++) {
 		for (int x = 0; x < iw; x++) {
-			int b = (int )bgrImage.data[3 * (y * iw + x) + 0];
-			int g = (int) bgrImage.data[3 * (y * iw + x) + 1];
-			int r = (int) bgrImage.data[3 * (y * iw + x) + 2];
+			double b = (double) bgrImage.data[3 * (y * iw + x) + 0];
+			double g = (double) bgrImage.data[3 * (y * iw + x) + 1];
+			double r = (double) bgrImage.data[3 * (y * iw + x) + 2];
 			gImage.data[y * iw + x] = (unsigned char)(0.114076 * b + 0.585841 * g + 0.299083 * r);
 		}
 	}

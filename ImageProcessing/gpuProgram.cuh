@@ -1,3 +1,6 @@
+// Created By: Sandeep Katragadda
+// https://github.com/ksandeep4u/CUDA-examples
+
 #pragma once
 #include<opencv2/core.hpp>
 #include<opencv2/highgui.hpp>

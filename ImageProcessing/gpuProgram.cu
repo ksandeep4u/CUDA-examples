@@ -1,3 +1,6 @@
+// Created By: Sandeep Katragadda
+// https://github.com/ksandeep4u/CUDA-examples
+
 #pragma once
 #include "cuda.h"
 #include "cuda_runtime.h"
@@ -12,9 +15,9 @@ __global__ void gray_filter_kernel(unsigned char* bgrImage, unsigned char* gImag
 
 	for (int x = idx_x; x < iw; x += stride_x) {
 		for (int y = idx_y; y < ih; y += stride_y) {
-			int b = (int)bgrImage[3 * (y * iw + x) + 0];
-			int g = (int)bgrImage[3 * (y * iw + x) + 1];
-			int r = (int)bgrImage[3 * (y * iw + x) + 2];
+			double b = (double) bgrImage[3 * (y * iw + x) + 0];
+			double g = (double) bgrImage[3 * (y * iw + x) + 1];
+			double r = (double)bgrImage[3 * (y * iw + x) + 2];
 			gImage[y * iw + x] = (unsigned char)(0.114076 * b + 0.585841 * g + 0.299083 * r);
 		}
 	}

@@ -1,3 +1,7 @@
+// Created By: Sandeep Katragadda
+// https://github.com/ksandeep4u/CUDA-examples
+
+#pragma once
 #include<iostream>
 #include "cpuProgram.h"
 #include "gpuProgram.cuh"
