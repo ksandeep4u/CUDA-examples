@@ -15,7 +15,7 @@ Project --> Properties--> Linker --> Input --> Additional Dependencies
 cudart_static.lib
 
 ### OpenCV
-Project --> Properties--> Linker --> General --> Additional Library Directories
+Project --> Properties--> C/C++ --> General --> Additional Include Directories
 $root-folder$\lib\opencv3.3.0\include
 
 Project --> Properties--> Linker --> General --> Additional Library Directories
