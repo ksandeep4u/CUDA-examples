@@ -30,3 +30,8 @@ opencv_cudaimgproc330.lib
 opencv_cudafeatures2d330.lib
 opencv_cudaarithm330.lib
 opencv_cudafilters330.lib
+
+
+### MNIST daset (Digit classification)
+Download train.txt from https://drive.google.com/open?id=1tVyvg6c1Eo5ojtiz0R17YEzcUe5cN285
+Place the file in the DigitClassification folder
