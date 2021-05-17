@@ -12,7 +12,7 @@ int main() {
 	bool useGPU = false;
 
 	classifyCoordinates(useGPU);
-	//classifyDigits(useGPU);
+	classifyDigits(useGPU);
 
 	return 0;
 }
